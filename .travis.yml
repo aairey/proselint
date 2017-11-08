@@ -22,6 +22,7 @@ install:
 - gem install danger
 - gem install danger-prose
 - ( cd plugins/flycheck && cask install )
+- spacy download en_core_web_sm
 before_script:
 - travis lint -x --skip-completion-check
 script:
